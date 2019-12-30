@@ -4,7 +4,8 @@ spath=$(realpath $0)
 
 echo "Executing $spath"
 
-if [ $(curl -s https://swapi.co/api/people/1/ | jq ".gender") == \"male\" ]
+
+if [ $(curl -s https://swapi.co/api/people/1/ | jq ".height") == \"172\" ]
 then 
 	echo "$spath: SUCCESS"
 	exit 0
