@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Starting the test...."
+
 dname=$(dirname $0)
 
 bash $dname/nasa.sh && \
